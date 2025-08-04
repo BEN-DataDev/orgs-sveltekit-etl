@@ -1,0 +1,29 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment directories
+.venv/
+
+# Ignore configuration files
+config_data/*.json
+config_data/*.yaml      
+config_data/*.yml
+
+# Ignore IDE and editor files
+.vscode/
+# Ignore system files
+.DS_Store   
+# Ignore Python cache files
+*.py[cod]
+# Ignore Jupyter Notebook checkpoints   
+.ipynb_checkpoints/
+# Ignore coverage reports
+*.coverage
+.coverage.* 
+
+# Ignore environment variables
+.env    

@@ -1,0 +1,5 @@
+flask
+pandas
+supabase
+flask-supabase
+python-dotenv
