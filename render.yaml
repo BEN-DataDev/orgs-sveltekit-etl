@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: orgs-sveltekit-etl
+    env: python
+    region: ohio  # You can change this to your preferred region
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:create_app()
+    healthCheckPath: /api/health  # We should add this endpoint
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: REDIS_URL
+        sync: false
+      - key: PRIVATE_ABN_SEARCH_GUID
+        sync: false
+      - key: PYTHONPATH
+        value: .
+    autoDeploy: true

@@ -9,9 +9,12 @@ __pycache__/
 .venv/
 
 # Ignore configuration files
-config_data/*.json
-config_data/*.yaml      
-config_data/*.yml
+config/*.json
+config/*.yaml      
+config/*.yml
+
+# Ignore postcode files
+app/source_data/*.csv
 
 # Ignore IDE and editor files
 .vscode/
